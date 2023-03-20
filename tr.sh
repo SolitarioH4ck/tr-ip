@@ -1,8 +1,6 @@
 #!/bin/bash
-#COLORES
+#Colores Utilizados
 white='\033[1;37m'
-Cyan='\033[1;36m'
-azul='\033[94m'
 red='\033[1;31m'
 
 #Intalacion de paquetes necesarios
@@ -44,6 +42,8 @@ if [ $opcion == "1" ];then
         echo -e "[\e[91m*$white] Inserta la IP:"
         echo -n ">> "
         read -r ip
+        echo -e "$white[$red-$white]$red Buscando datos de:" $ip
+        sleep 1.8
 	if [[ $ip == "" ]];then
                date_ip
 fi
@@ -52,9 +52,9 @@ date_ip(){
 	query=$(grep -o '"query":.*' infoip | cut -d '"' -f4)
 	echo
 	if [[ $query == "" ]]; then
-		echo -e "[\e[91m*$white] $red Hostname:$white Unknown"
+		echo -e "[\e[91m*$white] IP Address:$redUnknown"
 	else
-		echo -e "$white[$red*$white] Hostname:$red" $query
+		echo -e "$white[$red*$white] IP Address:$red" $query
 	fi
 
 
