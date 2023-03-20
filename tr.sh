@@ -5,6 +5,13 @@ Cyan='\033[1;36m'
 azul='\033[94m'
 red='\033[1;31m'
 
+#Intalacion de paquetes necesarios
+echo -e "$white[$red•$white]$red Actualizando paquetes...$white"
+apt upgrade && apt upgrade
+pkg install git
+pkg install bash
+bash tr.sh
+
 #Menu de opciones
 Menu(){
 clear
