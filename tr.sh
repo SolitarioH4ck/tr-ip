@@ -41,7 +41,7 @@ if [ $opcion == "1" ];then
         echo -e "[\e[91m*$white] Inserta la IP:"
         echo -n ">> "
         read -r ip
-        echo -e "$white[$red-$white]$red Buscando datos de:" $ip
+        echo -e "$white[$red-$white]$red Buscando datos de:$white" $ip
         sleep 1.8
 	if [[ $ip == "" ]];then
                date_ip
