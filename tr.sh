@@ -9,7 +9,6 @@ apt upgrade && apt upgrade
 pkg install git
 pkg install bash 
 pkg install curl
-bash tr.sh
 
 #Menu de opciones
 Menu(){
