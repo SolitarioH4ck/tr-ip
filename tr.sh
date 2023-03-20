@@ -9,7 +9,8 @@ red='\033[1;31m'
 echo -e "$white[$red•$white]$red Actualizando paquetes...$white"
 apt upgrade && apt upgrade
 pkg install git
-pkg install bash
+pkg install bash 
+pkg install curl
 bash tr.sh
 
 #Menu de opciones
