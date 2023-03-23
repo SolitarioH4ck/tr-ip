@@ -9,7 +9,7 @@ white = '\033[1;39m'
 
 system("clear")
 print('')
-url = input(f"{red}Ingresa la url >> {white}")
+url = input(f"{red}Ingresa la URL -->>: {white}")
 shrt = pyshorteners.Shortener()                     
 nurl = shrt.tinyurl.short(url)
 print('')
