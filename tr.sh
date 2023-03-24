@@ -27,7 +27,7 @@ echo
 echo -e "   [\e[91m1$white] Geolocalizar IP"
 echo -e "   [\e[91m2$white]$white IPloggers"
 echo -e "   [\e[91m3$white] Ver mi IP"
-echo -e "   [\e[91m5$white] Obtener info de un numero"
+echo -e "   [\e[91m4$white] Obtener info de un numero"
 echo ""
 echo -e "   [\e[91m00$white] Exit"
 echo
