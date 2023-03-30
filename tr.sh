@@ -9,6 +9,8 @@ apt upgrade && apt upgrade
 pkg install git
 pkg install bash 
 pkg install curl
+pip install requests
+pip install phonenumbers
 
 #Menu de opciones
 Menu(){
