@@ -25,9 +25,10 @@ echo ""
 echo -e "[\e[91m-$white] Herramienta de Geolocalización"
 echo
 echo -e "   [\e[91m1$white] Geolocalizar IP"
-echo -e "   [\e[91m2$white]$white IPloggers"
+echo -e "   [\e[91m2$white] IPloggers"
 echo -e "   [\e[91m3$white] Ver mi IP"
-echo -e "   [\e[91m4$white] Obtener info de un numero"
+echo -e "   [\e[91m4$white] Send SMS anonimo"
+echo -e "   [\e[91m5$white] Obtener info de un numero"
 echo ""
 echo -e "   [\e[91m00$white] Exit"
 echo
@@ -167,6 +168,10 @@ elif [ $opcion == "3" ];then
         Menu 
 
 elif [ $opcion == "4" ];then
+        echo ""
+        python sms.py
+
+elif [ $opcion == "5" ];then
         echo ""
         python number.py
 
