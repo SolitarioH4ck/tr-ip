@@ -6,6 +6,7 @@ red = '\033[1;31m'
 white = '\033[1;39m'
 azul = '\033[1;34m'
 
+print('')
 numero = input(f"{white}[{red}-{white}]{white}Numero de la victima: {red}")
 print(f'{white}Escribe el Mensaje')
 
