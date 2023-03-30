@@ -16,8 +16,8 @@ resp = requests.post('https://textbelt.com/text', {
     'message': f'{sms}',
     'key': 'textbelt',
       })
-print(f'{white}Enviado SMS...')
+print(f'{white}Enviado SMS👻...')
 time.sleep(1.5)
 print('')
-input(f'{white}[{red}-{white}] SMS Enviado Presiona enter...')
+input(f'{white}[{red}-{white}] SMS Enviado Presiona enter🤡...')
 system("bash tr.sh")
