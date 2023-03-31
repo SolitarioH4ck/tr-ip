@@ -1,4 +1,4 @@
-import requests, time
+import requests, time, os
 #code by: SolitarioH4ck23
 
 #Colores..
@@ -20,4 +20,4 @@ print(f'{white}Enviado SMS👻...')
 time.sleep(1.5)
 print('')
 input(f'{white}[{red}-{white}] SMS Enviado Presiona enter🤡...')
-system("bash tr.sh")
+os.system("bash tr.sh")
