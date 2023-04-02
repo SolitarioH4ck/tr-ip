@@ -157,27 +157,27 @@ date_ip(){
 }
 date_ip
 
-elif [ $opcion == "2" ];then
+elif [[ $opcion == 2 || $opcion == 2 ]];then
         echo ""
         termux-open https://iplogger.org/es/
         sleep 1.2
         Menu
 
-elif [ $opcion == "3" ];then
+elif [[ $opcion == 3 || $opcion == 3  ]];then
        echo -e $red"su dirección ip es:" $white
         curl ifconfig.me
         sleep 1.7
         Menu 
 
-elif [ $opcion == "4" ];then
+elif [[ $opcion == 4 || $opcion == 4 ]];then
         echo ""
         python sms.py
 
-elif [ $opcion == "5" ];then
+elif [[ $opcion == 5 || $opcion == 5 ]];then
         echo ""
         python number.py
 
-elif [ $opcion == "00" ];then
+elif [[ $opcion == 00 ]];then
 	echo ""
 	echo "Hasta la Proxima!"
 	exit
